@@ -1,0 +1,13 @@
+print("Electricity Bill Calculation")
+bill = float(input("Input electricity usage (kWh): "))
+
+if bill <= 100:
+    price = 0.10
+elif bill <= 300:
+    price = 0.15
+else:
+    price = 0.20
+
+total = bill * price
+
+print(f"Total bill: ${total:.2f}")
