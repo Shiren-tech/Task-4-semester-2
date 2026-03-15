@@ -1,0 +1,11 @@
+print("Triangle Calculator")
+length1 = float(input("Input triangle length1: "))
+length2 = float(input("Input triangle length2: "))
+length3 = float(input("Input triangle length3: "))
+
+if length1 == length2 == length3:
+    print("This is Equilateral Triangle")
+elif length1 == length2 or length1 == length3 or length2 == length3:
+    print("This is Isosceles Triangle")
+else:
+    print("This is Scalene Triangle")
