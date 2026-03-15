@@ -1,0 +1,18 @@
+print("Employee Bonus")
+salary = float(input("Input your salary: "))
+service = float(input("Number years of service: "))
+
+if service >= 10:
+    bonus = 0.25
+elif service >= 5:
+    bonus = 0.15
+elif 1 <= service <= 4:
+    bonus = 0.05
+else:
+    bonus = 0
+
+totalbonus = int(salary * bonus)
+totalsalary = int(totalbonus + salary)
+
+print(f"You have received a bonus of: {totalbonus:,}")
+print(f"Your current total salary: {totalsalary:,}")
