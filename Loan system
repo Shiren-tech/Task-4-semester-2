@@ -1,0 +1,20 @@
+print("Loan Eligibility System")
+salary = float(input("Input your salary: "))
+credit = int(input("Input your credit score: "))
+duration = int(input("Input your employment duration: "))
+
+count = 0
+
+if salary >= 3000:
+    count += 1
+if credit >= 650:
+    count += 1
+if duration >= 2:
+    count += 1
+
+if count == 3:
+    print("Your loan is approved")
+elif count == 2:
+    print("Your loan receives conditional approval")
+else:
+    print("Your loan is rejected")
