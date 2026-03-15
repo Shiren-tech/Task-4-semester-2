@@ -1,0 +1,24 @@
+print("Parking Fee System")
+vehicle = str(input("What kind of vehicle do you used: ")).lower()
+number = float(input("number of hours parked: "))
+
+jam1 = 0
+jam2 = 0
+
+if vehicle == "motorcycle":
+    jam1 = 1
+    jam2 = 0.5
+elif vehicle == "car":
+    jam1 = 2
+    jam2 = 1
+elif vehicle == "bus":
+    jam1 = 3
+    jam2 = 2
+else:
+    print("Error: Invalid vehicle type")
+
+total = (number - 1)
+totalril = total * jam2
+aseli = totalril + jam1
+
+print(f"Total parking fee: ${aseli:,.2f}")
